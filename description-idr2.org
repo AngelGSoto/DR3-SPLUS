@@ -32,11 +32,46 @@ For the search of PNe.
 
 #+end_example
 
-+ Applying the color criterio got with the filter Viironen.
+** Applying the color criterion got with the filter Viironen.
  
+I applied the Viironen color criterion to all MAIN catalogs using the Gustavo code. 
+
 #+begin_example Viironen  
 
 'R_PStotal <= 20.5', e_R_PStotal <= 0.2', 'e_F660_PStotal <= 0.2', 'e_I_PStotal <= 0.2', 
 '(R_PStotal - F660_PStotal) >= 0.15*(R_PStotal - I_PStotal) + 0.53'
 
 #+end_example
+
+: Splus-queries.ipynb
+
+Result:
+: halphaemitter-allmain.fits 
+
++ I removed all the objects that have 99 value in any filter.
+
+: SPLUS_DR2_dataRelease_2020_HaphaVii.py
+
+Result:
+: halphaemitter-allmain-99.tab
+
+ - I applied PCA and logistic regression algorithms to the results.
+   : pca-splus_idr2-3class-SMOTE_predict.py 
+
+   For that I used my laptop.
+   
+#+begin_example 
+PN-pc-halphaemitter-allmain-99.tab
+SySt-pc-halphaemitter-allmain-99.tab
+#+end_example 
+   
+   Two galactic known PNe were select. One extragalactic (in a globular cluster) PN also was selected.
+
+  - I made the colour diagrams:
+    : color-diagrams-splusdr2_automatic-v2.py
+  - And the photo-spectra:
+    : photo-spectra-SPLUSDR2-v2.py  
+
+*** Next step
++ Continue the analysis.
++ Make the same for a aperture of 6 arcsec.
