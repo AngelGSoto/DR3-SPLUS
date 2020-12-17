@@ -79,6 +79,14 @@ I implemented separately the color criterion on HYDRA, this because it does no a
 I create the database =HYDRA/splusdr3.db=. I applied the color criterion to select strong Halpha emitter. I selected =3232= objects. I removed those objects with 99 values in any of
 the filters, I got =1895= objects.
 
++ After applied logistic regression =26= objects were classified as PNe and =624= as SySt.
+- Making a cut a the probability of being PN, I got =13=.
+  -- iDR3.HYDRA-0026.052331 (158.85933642579576	-24.753136157195524).
+  -- iDR3.HYDRA-0026.050342 (158.8553579623175	-24.748191661873708)
+- Making a cut a the probability of being SySt, I got =497=. By applying all broad band the error =<= 0.2.
+- Good candidate iDR3.HYDRA-0033.073173	(154.76306345588918 -26.189977178796493).
+
+
 *** Next step
 + Continue the analysis.
 + Make the same for a aperture of 6 arcsec.
