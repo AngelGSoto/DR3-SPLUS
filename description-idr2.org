@@ -78,6 +78,7 @@ For cleaning the sample. At the moment i made a cut at the probability (P(SySt) 
     : SPLUS_cleaning_tables.py
 
 Finding =~800= SySt.
+I made a cut in J - H >
 
 
 *** Hydra catalog.
